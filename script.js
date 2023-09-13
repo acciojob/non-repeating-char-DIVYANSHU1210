@@ -5,9 +5,9 @@ function firstNonRepeatedChar(str) {
 		arr[str.charAt(i)]++;
 	}
 
-	for(let i=0; i<arr.length(); i++){
-		if(arr[i] == 1)return i.toString();
-	} 
+	for(let i=0; i<str.length; i++){
+        if(arr[str.charCodeAt(i)] == 1)return i.toString();
+    } 
 } 
 // const input = prompt("Enter a string");
 // alert(firstNonRepeatedChar(input));  
